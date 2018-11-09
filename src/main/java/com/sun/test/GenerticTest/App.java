@@ -8,7 +8,7 @@ public class App
 {
     public static void main( String[] args )
     {
-    	//感觉搞不出神魔结果
+    	//很难受
         System.out.println( "Hello World12!" );
     }
 }
