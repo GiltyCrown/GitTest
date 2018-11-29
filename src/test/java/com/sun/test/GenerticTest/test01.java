@@ -2,7 +2,9 @@ package com.sun.test.GenerticTest;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
@@ -91,5 +93,21 @@ public class test01 {
 		Calendar start = Calendar.getInstance();
 		start.setTime(new Date());
 		System.out.println(start.get(Calendar.MONTH));
+	}
+	
+	@Test
+	public void testArray(){
+		List<String> string=new ArrayList<String>();
+		string.add("u_a");
+		string.add("c_9");
+		string.add("c_6");
+		string.add("e_type");
+		for (String string2 : string) {
+			System.out.println(string2);
+		}
+		Collections.sort(string);
+		for (String string2 : string) {
+			System.out.println(string2);
+		}
 	}
 }
